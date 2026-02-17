@@ -12,7 +12,11 @@ Tutorial:
 """
 
 import json
-from ..core.system import KonomiSystem
+
+try:
+    from ..core.system import KonomiSystem
+except ImportError:
+    from core.system import KonomiSystem
 
 
 def create_ws_server(system: KonomiSystem):

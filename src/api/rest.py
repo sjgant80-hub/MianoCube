@@ -12,7 +12,10 @@ Tutorial:
     # Then run with: uvicorn or similar
 """
 
-from ..core.system import KonomiSystem
+try:
+    from ..core.system import KonomiSystem
+except ImportError:
+    from core.system import KonomiSystem
 
 
 def create_rest_app(system: KonomiSystem):

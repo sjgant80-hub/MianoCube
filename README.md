@@ -123,6 +123,32 @@ Each cube runs a tiny LLM. The eVGPU does tensor math on
 CPU. No GPU needed. The Konomi Standard maps this to
 real industrial systems (factories, control rooms, SCADA).
 
+## Testing & Code OEE
+
+Run the full test suite (226 dynamic/parameterized tests):
+
+```bash
+pytest tests/ -v
+```
+
+Run the Code OEE report (industrial quality metrics for your code):
+
+```bash
+python -m tests.run_oee
+```
+
+| Metric       | Measures                    | Target |
+|-------------|------------------------------|--------|
+| Availability | Modules that import cleanly | >90%   |
+| Performance  | Classes with complete APIs  | >95%   |
+| Quality      | Tests that pass             | >99%   |
+| **Code OEE** | **A x P x Q**              | >85%   |
+
+Test templates in `tests/templates/` dynamically generate tests:
+- **ImportTestTemplate** -- discovers all `.py` files, one test per module
+- **ModuleTestTemplate** -- checks class API contracts
+- **StateMachineTemplate** -- generates valid + invalid state transition tests
+
 ## Kontainer Deployment
 
 ```bash
