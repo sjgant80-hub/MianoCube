@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MianoCube — Cubes Are Neurons</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="ui">
+  <div id="header">
+    <h1>CUBES ARE NEURONS</h1>
+    <p>FROM 1 CELL TO 86 BILLION — HOW THE BRAIN NESTS</p>
+  </div>
+  <div id="nav"></div>
+  <div id="left">
+    <div id="ltitle"></div>
+    <div id="lsub"></div>
+    <div id="ldesc"></div>
+  </div>
+  <div id="right">
+    <div id="cube-count"></div>
+    <div id="cube-unit"></div>
+    <div id="brain-part"></div>
+  </div>
+  <div id="scale-bar"></div>
+  <div id="bottom">
+    <p>CLICK LEVELS — ARROW KEYS — DRAG TO ROTATE</p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/controls.js"></script>
+<script src="js/viz.js"></script>
+<script src="js/rebuild.js"></script>
+<script src="js/levels.js"></script>
+<script src="js/animate.js"></script>
+<script>loadLevels();</script>
+
+</body>
+</html>

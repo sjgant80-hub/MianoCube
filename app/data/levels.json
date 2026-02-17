@@ -1,0 +1,92 @@
+[
+  {
+    "title": "1 CUBE = 1 NEURON",
+    "sub": "THE BASE UNIT",
+    "count": "1",
+    "unit": "CUBE",
+    "brain": "A single neuron.<br>Cell body. Axon. Dendrites.<br>It fires or it doesn't.<br>Binary. One cube.",
+    "desc": "This is where it starts. <span class=\"c\">1 cube = 1 neuron</span>.<br><br>The cube has <span class=\"c\">6 faces</span>. A neuron has inputs (dendrites) and outputs (axon terminals). The faces of the cube are the connection points.<br><br>The cube can be <span class=\"w\">on or off</span>. A neuron fires or it doesn't. Binary state.<br><br>The inside holds the <span class=\"m\">state</span> — membrane potential, neurotransmitter levels, history. The cube remembers.",
+    "color": "0x00ffff",
+    "vizType": "single"
+  },
+  {
+    "title": "8 CUBES = 1 MICROCIRCUIT",
+    "sub": "THE FIRST NEST",
+    "count": "8",
+    "unit": "CUBES",
+    "brain": "A microcircuit.<br>8 neurons that talk to each other.<br>Excitatory + inhibitory pairs.<br>The smallest \"thought.\"",
+    "desc": "<span class=\"c\">8 neurons</span> at the 8 corners of a larger cube. The <span class=\"c\">first nesting</span>.<br><br>In the brain this is a <span class=\"g\">microcircuit</span> — a tiny cluster that form a functional unit. Some excite, some inhibit.<br><br>This is the smallest thing that can have an <span class=\"m\">opinion</span>. Eight neurons can vote. Consensus. Pattern.",
+    "color": "0x00ddff",
+    "vizType": "micro"
+  },
+  {
+    "title": "64 CUBES = 1 MINICOLUMN",
+    "sub": "DEPTH 2",
+    "count": "64",
+    "unit": "CUBES",
+    "brain": "A cortical minicolumn.<br>~80-120 neurons in real cortex.<br>Processes one feature.<br>One edge. One frequency.",
+    "desc": "8 microcircuits nested inside a larger cube. <span class=\"c\">64 neurons</span>.<br><br>Maps to a <span class=\"g\">cortical minicolumn</span> — a vertical stack ~30\u03bcm wide. Real minicolumns have ~80-120 neurons.<br><br>A minicolumn processes <span class=\"c\">one feature</span>. In visual cortex: one edge orientation. The minicolumn is the brain's <span class=\"m\">pixel</span>.",
+    "color": "0x00bbff",
+    "vizType": "mini"
+  },
+  {
+    "title": "512 CUBES = 1 MACROCOLUMN",
+    "sub": "DEPTH 3",
+    "count": "512",
+    "unit": "CUBES",
+    "brain": "A cortical macrocolumn.<br>~500 neurons wide.<br>Processes a complete feature set.<br>All orientations. All frequencies.",
+    "desc": "8 minicolumns nested. <span class=\"c\">512 neurons</span>.<br><br>A <span class=\"g\">cortical macrocolumn</span> (hypercolumn). ~300\u03bcm wide. Contains ALL minicolumns for a complete feature set.<br><br>The macrocolumn sees <span class=\"c\">all angles at one location</span>. The first <span class=\"m\">holistic</span> processor.",
+    "color": "0x0099ff",
+    "vizType": "macro"
+  },
+  {
+    "title": "4,096 CUBES = 1 CORTICAL AREA",
+    "sub": "DEPTH 4",
+    "count": "4,096",
+    "unit": "CUBES",
+    "brain": "A functional cortical area.<br>Like V1, A1, S1, M1.<br>Processes one modality.<br>Vision. Sound. Touch.",
+    "desc": "8 macrocolumns nested. <span class=\"c\">4,096 neurons</span>.<br><br>A <span class=\"g\">functional cortical area</span>. V1 = visual. A1 = auditory. S1 = somatosensory. M1 = motor.<br><br>Each handles <span class=\"c\">one modality</span>. But all have the <span class=\"m\">same internal architecture</span>. Same cubes. Different inputs.",
+    "color": "0x0077ff",
+    "vizType": "area"
+  },
+  {
+    "title": "32K CUBES = 1 REGION",
+    "sub": "DEPTH 5",
+    "count": "32,768",
+    "unit": "CUBES",
+    "brain": "A brain region.<br>Frontal lobe. Temporal lobe.<br>Multi-modal integration begins.",
+    "desc": "8 cortical areas nested. <span class=\"c\">32,768 neurons</span>.<br><br><span class=\"g\">Brain region</span> scale. Temporal lobe. Frontal lobe. Cerebellum.<br><br>Where <span class=\"c\">integration</span> starts. Vision meets meaning. Sound meets words. Cubes talking <span class=\"m\">across modalities</span>.",
+    "color": "0x4444ff",
+    "vizType": "region"
+  },
+  {
+    "title": "262K CUBES = 1 NETWORK",
+    "sub": "DEPTH 6",
+    "count": "262,144",
+    "unit": "CUBES",
+    "brain": "A functional network.<br>Default mode. Salience. Executive.<br>The \"minds within the mind.\"",
+    "desc": "8 regions nested. <span class=\"c\">262,144 neurons</span>.<br><br>A <span class=\"g\">functional network</span>. The brain has ~7 major ones: Default mode (self), Salience (what matters), Executive (decisions), Dorsal attention, Language, Visual, Sensorimotor.<br><br>Each spans <span class=\"m\">multiple regions</span>. Minds within the mind.",
+    "color": "0x6600ff",
+    "vizType": "network"
+  },
+  {
+    "title": "2M CUBES = 1 HEMISPHERE",
+    "sub": "DEPTH 7",
+    "count": "2,097,152",
+    "unit": "CUBES",
+    "brain": "A hemisphere.<br>Left or right.<br>All networks unified.<br>One half of consciousness.",
+    "desc": "8 networks nested. <span class=\"c\">2 million neurons</span>.<br><br>A <span class=\"g\">hemisphere</span>. Connected by the corpus callosum — the bridge.<br><br>Split-brain patients prove each operates <span class=\"c\">independently</span>. Two cube-stacks unified by the bridge.<br><br>Depth 7. <span class=\"m\">Raphael's number</span>. 2^7 = 128 connections per neuron.",
+    "color": "0x8800ff",
+    "vizType": "hemi"
+  },
+  {
+    "title": "86 BILLION CUBES = 1 BRAIN",
+    "sub": "DEPTH 12 (10 \u00d7 8\u00b9\u00b9)",
+    "count": "86,000,000,000",
+    "unit": "CUBES",
+    "brain": "1 brain.<br>10 depth-11 cubes.<br>2 empty slots.<br>12 nesting depths.<br>1+2 = 3 = creation.",
+    "desc": "<span class=\"c\">86 billion cubes</span>. Every single neuron.<br><br>10 depth-11 cubes inside a depth-12 shell. <span class=\"w\">2 empty corners</span>. Room to grow.<br><br>128 connections \u00d7 86 billion = <span class=\"m\">11 trillion synapses</span>. Connection layer nests 2 depths deeper than neuron layer.<br><br><span class=\"c\">12 depths. 1+2 = 3. Creation.</span>",
+    "color": "0xff00ff",
+    "vizType": "brain"
+  }
+]

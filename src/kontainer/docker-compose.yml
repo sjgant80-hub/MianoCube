@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: ../..
+      dockerfile: src/kontainer/Dockerfile.api
+    ports:
+      - "3001:3001"
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1G
+    environment:
+      - DB_URL=postgresql://db:5432/konomi
+      - REDIS_URL=redis://redis:6379
+
+  web:
+    image: nginx:alpine
+    ports:
+      - "3000:80"
+    volumes:
+      - ../../app:/usr/share/nginx/html:ro
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+
+  ws:
+    build:
+      context: ../..
+      dockerfile: src/kontainer/Dockerfile.ws
+    ports:
+      - "3002:3002"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+    environment:
+      - REDIS_URL=redis://redis:6379
